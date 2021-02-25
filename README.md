@@ -3,6 +3,7 @@
 Prueba
 
 ¿Qué espero que haga el proyecto?
+
 ¿Qué tipos de usuario tendrá nuestro sistema?
 ¿Qué acciones puede realizar cada usuario?
 ¿Qué información se necesita?
