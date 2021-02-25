@@ -81,3 +81,22 @@ Usuario
 ¿Qué características tiene cada entidad?
 
 ¿Qué funcionalidades tiene cada entidad?
+Libro  
+    -Ser intercambiado  
+    -Ser vendido  
+    -Estar en el stock  
+    -Visualizar la información del libro  
+Usuario  
+    -Intercambiar libros  
+    -Evaluar la propuesta  
+    -Evaluar los libros  
+    -Evaluar a otros usuarios  
+    -Comrpar un libro  
+    -Registrarse  
+    -Registrar sus libros  
+Administrador  
+    -Gestionar Usuarios
+    -Registrar los libros nuevos
+    -Editar stock
+
+
