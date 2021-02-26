@@ -2,7 +2,7 @@
 
 ## Postwork Sesion 03
 
-¿Qué espero que haga el proyecto?  
+**¿Qué espero que haga el proyecto?**
 Una aplicación web en donde se pueda comprar e intercambiar libros.  
 -Registro de usuarios  
 -Visualizar los libros tanto nuevos como de intercambio  
@@ -14,11 +14,11 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
 -Stock de los libros  
 -Evaluación de libros y usuario  
 
-¿Qué tipos de usuario tendrá nuestro sistema?
+**¿Qué tipos de usuario tendrá nuestro sistema?**
 -Administrador (librería)  
 -Usuario (cliente)  
 
-¿Qué acciones puede realizar cada usuario?
+**¿Qué acciones puede realizar cada usuario?**
 Administrador  
     -Registrar y eliminar los libros.  
     -Gestionar el Stock.  
@@ -35,7 +35,7 @@ Usuario
     -Comprar o intercambiar libros.  
     -Seleccionar método de envio.  
 
-¿Qué información se necesita?  
+**¿Qué información se necesita?**
 Libros  
     -Id 
     -Nombre del libro  
@@ -76,14 +76,12 @@ Usuario
     -Historial de Intercambios  
     -Telefono  
 
-¿Cuáles son las principales entidades?  
+**¿Cuáles son las principales entidades?** 
     -Libro  
     -Usuario  
     -Administrador
 
-¿Qué características tiene cada entidad?
-
-¿Qué funcionalidades tiene cada entidad?
+**¿Qué funcionalidades tiene cada entidad?**
 Libro  
     -Ser intercambiado  
     -Ser vendido  
