@@ -82,6 +82,7 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
 
 **¿Qué funcionalidades tiene cada entidad?**
 - Libro  
+    - Ser registrado  
     - Ser intercambiado  
     - Ser vendido  
     - Estar en el stock  
