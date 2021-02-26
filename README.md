@@ -1,6 +1,7 @@
 # proyecto_bedu
 
-##Postwork Sesion 03
+## Postwork Sesion 03
+
 ¿Qué espero que haga el proyecto?  
 Una aplicación web en donde se pueda comprar e intercambiar libros.  
 -Registro de usuarios  
