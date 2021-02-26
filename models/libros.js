@@ -1,7 +1,7 @@
 /** Clase que representa un libro en compra (nuevo) o prestamo (usado) */
 
 class Libro{
-    constructor(id, nombre, autor, edición, editorial, genero, númeroDePaginas, idioma, tipoDePasta, isbn, sinopsis, estadoDelLibro, descripción, calificaciónComentario, precio, foto, stock){
+    constructor(id, nombre, autor, edicion, editorial, genero, numeroDePaginas, idioma, tipoDePasta, isbn, sinopsis, estadoDelLibro, descripcion, calificacionComentario, precio, foto, stock){
         this.id = id; // Codigo de identificación
         this.nombre = nombre; // Titulo del libro
         this.autor = autor; 
@@ -35,5 +35,9 @@ class Libro{
 
     venta(){
         // función para generar una venta (libro nuevo)
+    }
+
+    visualizar(){
+        // función para visualizar la información del libro
     }
 }
