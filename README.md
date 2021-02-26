@@ -52,11 +52,12 @@ Libros
     -Precio  
     -Foto  
     -Stock  
-    
+
 
 Administrador  
     -Id  
-    -Nombre  
+    -Nombre 
+    -Apellido 
     -Email  
     -Contraseña
 
@@ -91,7 +92,7 @@ Usuario
     -Evaluar la propuesta  
     -Evaluar los libros  
     -Evaluar a otros usuarios  
-    -Comrpar un libro  
+    -Comprar un libro  
     -Registrarse  
     -Registrar sus libros  
 Administrador  
