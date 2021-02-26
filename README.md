@@ -76,6 +76,7 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     - Telefono  
 
 **¿Cuáles son las principales entidades?** 
+
     - Libro  
     - Usuario  
     - Administrador
