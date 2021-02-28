@@ -14,11 +14,6 @@ function editarUsuario(req,res){
 }
 
 
-function intercambiarLibros(req, res){   
-    var libro1 =new Libros(1, 'Harry Potter', 'J.K. Rowling')
-    var libro2 =new Libros(2, 'El señor de los anillos', 'J.R.R. Tolkien')
-
-}
 
 function obtenerUsuarios(req, res){
     var usuario1 = new Usuario(1, 'Hannia', 'Rosales', 'direccion')
@@ -27,13 +22,6 @@ function obtenerUsuarios(req, res){
 }
 
 
-function evaluarPropuestaDeIntercambio(req, res){
-    if(TRUE){
-        res.send('Intercambio aceptado')
-    }else{
-        res.send('Intercambio no aceptado')
-    }
-}
 
 function banearUsuario(req,res){
     res.status(200).send(`Usuario ${req.params.id} baneado`)
@@ -47,11 +35,30 @@ function evaluarUsuarios(req, res){
     res.status(200).send('Usuario evaluado')
 }
 
+
+//Funciones que no sabemos si van en este controlador 
 function comprar(req, res){
     var libro = new Libros(req.params.id, 'libro1')
     libro.stock--
     res.status(200).send('libro comprado')
 }
+
+function intercambiarLibros(req, res){   
+    var libro1 =new Libros(1, 'Harry Potter', 'J.K. Rowling')
+    var libro2 =new Libros(2, 'El señor de los anillos', 'J.R.R. Tolkien')
+}
+
+
+function evaluarPropuestaDeIntercambio(req, res){
+    if(TRUE){
+        res.send('Intercambio aceptado')
+    }else{
+        res.send('Intercambio no aceptado')
+    }
+}
+
+
+//
 module.export = {
     registroUsuario,
     editarUsuario, 
