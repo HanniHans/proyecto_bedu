@@ -9,20 +9,6 @@ class Administrador{
         this.contraseña = contraseña;
     }
 
-    registrar();
-    //Registrar un usuario Admin
-
-    editarAdmin();
-    //Editar la informacion de un Admin
-
-    editarUsuario();
-    // Gestionar la informacion de un usuario
-
-    banearUsuario();
-    //banear a un usuariol
-
-    editarStock();
-    // Actualizar stock
-
-
 }
+
+module.exports = Administrador;

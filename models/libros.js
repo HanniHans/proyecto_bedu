@@ -21,24 +21,6 @@ class Libro{
         this.foto = foto;
         this.stock = stock; // Disponibilidad del libro y cantidad de copias
     }
-
-    registrar(){
-        // función para guardar un nuevo registro en la base de datos
-    }
-
-    actualizar(){
-        // función para actualizar el stock de los libros
-    }
-
-    intercambio(){
-        // función para generar una vinculo de intercambio (libro usado)
-    }
-
-    venta(){
-        // función para generar una venta (libro nuevo)
-    }
-
-    visualizar(){
-        // función para visualizar la información del libro
-    }
 }
+
+module.export = Libro;

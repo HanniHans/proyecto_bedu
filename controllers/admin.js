@@ -1,7 +1,4 @@
 const Admin = require('../models/admin')
-const Usuario = require('../models/usuario')
-const Libro = require('../models/libros')
-
 
 function registrarAdmin(req, res){
     var admin = new Admin(req.body)
@@ -32,22 +29,9 @@ function editarAdmin(req, res){
 };
 //Editar la informacion de un Admin
 
-function editarUsuario(req, res){
-    var usuario = new Usuario(req.params.id, 'Sebastiam', 'Neri', 'direccion1 ', 'foto', 'ContraseñaSegura')
-    var modificaciones = req.body;
-    usuario = {...usuario, ... modificaciones}
-    res.send(usuario)
+module.exports= {
+    registrarAdmin,
+    obtenerAdmin,
+    obtenerAdmins,
+    editarAdmin
 }
-// Gestionar la informacion de un usuario
-
-function banearUsuario(req,res){
-    res.status(200).send(`Usuario ${req.params.id} baneado`)
-}
-//banear a un usuariol
-
-function editarStock(req, res){
-    var libro = new Libro(req.params.id, 'Harry Potter', 'J.K Rowling', '2a. Edición', 'Trillas', 'Ficción', 400, 'Español', 4)
-    libro.stock = req.body;
-    res.status(200).send(`Stock actualizado`)
-}
-// Actualizar stock
