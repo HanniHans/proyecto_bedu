@@ -10,6 +10,7 @@ class Libro{
         this.genero = genero; // ej. ciencia ficción, historia, etc.
         this.numeroDePaginas = numeroDePaginas;
         this.idioma = idioma;
+        this.stock = stock;
         this.tipoDePasta = tipoDePasta; // ej. pasta suave, pasta dura
         this.isbn = isbn;
         this.sinopsis = sinopsis; // Breve descripción del tema-historia del libro

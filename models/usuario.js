@@ -19,6 +19,10 @@ class Usuario{
         // Función para el registro de usuario en la plataforma
     }
 
+    editarUsuario(){
+        
+    }
+
     registroLibros(){
         // función para el registro de libros a intercambiar
     }
