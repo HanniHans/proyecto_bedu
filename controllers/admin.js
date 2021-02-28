@@ -26,12 +26,17 @@ function editarAdmin(req, res){
     var modificaciones = req.body;
     admin = {...admin, ...modificaciones}
     res.send(admin)
-};
+}
+
+function banearAdmin(req,res){
+    res.status(200).send(`Administrador ${req.params.id} baneado`)
+}
 //Editar la informacion de un Admin
 
 module.exports= {
     registrarAdmin,
     obtenerAdmin,
     obtenerAdmins,
-    editarAdmin
+    editarAdmin,
+    banearAdmin
 }
