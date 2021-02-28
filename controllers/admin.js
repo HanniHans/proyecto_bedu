@@ -33,7 +33,7 @@ function editarAdmin(req, res){
 //Editar la informacion de un Admin
 
 function editarUsuario(req, res){
-    var usuario = new Usuario(req.params.id, 'Sebastiam', 'Neri', 'admin3@admin.com', 'ContraseñaSegura')
+    var usuario = new Usuario(req.params.id, 'Sebastiam', 'Neri', 'direccion1 ', 'foto', 'ContraseñaSegura')
     var modificaciones = req.body;
     usuario = {...usuario, ... modificaciones}
     res.send(usuario)
