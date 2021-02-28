@@ -9,9 +9,9 @@ function intercambiarLibros(req, res){
     var libro2 = new Libros(2, 'El señor de los anillos', 'J.R.R. Tolkien');
     var intercambio = new Intercambio(usuario1, usuario2, libro1, libro2, true, true, "La Roma");
     if (intercambio.status_general){
-        res.status(200).send(`Intercambio Realizado\nEl punto de encuentro es: ${intercambio.punto_medio}`)
+        res.status(200).send(`Intercambio Realizado\nEl punto de encuentro es: ${intercambio.punto_medio}`);
     }else{
-        res.status(200).send("Lamentablemente el intercambio aún no se ha realizado.")
+        res.status(200).send("Lamentablemente el intercambio aún no se ha realizado.");
     }
 }
 
@@ -31,7 +31,7 @@ function verIntercambio(req, res){
     var libro1 = new Libros(1, 'Harry Potter', 'J.K. Rowling');
     var libro2 = new Libros(2, 'El señor de los anillos', 'J.R.R. Tolkien');
     var intercambio = new Intercambio(usuario1, usuario2, libro1, libro2, true, true, "La Roma");
-    res.status(200).send({...intercambio})
+    res.status(200).send({...intercambio});
 }
 
 function cambiarIntercambio(req, res){
@@ -40,9 +40,9 @@ function cambiarIntercambio(req, res){
     var libro1 = new Libros(1, 'Harry Potter', 'J.K. Rowling');
     var libro2 = new Libros(2, 'El señor de los anillos', 'J.R.R. Tolkien');
     var intercambio = new Intercambio(usuario1, usuario2, libro1, libro2, true, true, "La Roma");
-    intercambio.status_general = req.params.status 
-    intercambio.punto_medio = req.params.punto_medio
-    res.status(200).send("Intercambio actualizado")
+    intercambio.status_general = req.params.status;
+    intercambio.punto_medio = req.params.punto_medio;
+    res.status(200).send("Intercambio actualizado");
 }
 
 module.export = {
@@ -50,4 +50,4 @@ module.export = {
     cancelarIntercambio,
     verIntercambio,
     cambiarIntercambio
-}
+};
