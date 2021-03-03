@@ -2,6 +2,7 @@
 
 ## Tabla de contenidos
 1. [Postwork Sesion 03](#postwork-3)
+2. [Postwork Sesion 05](#postwork-5)
 
 ## Postwork Sesion 03 <a name="postwork-3"></a>
 
@@ -103,7 +104,7 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     - Registrar los libros nuevos
     - Editar stock
 
-## Postwork Sesion 05
+## Postwork Sesion 05 <a name="postwork-5"></a>
 
 ### Modelo Relacional
 ![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/modelo_relacional.png)
