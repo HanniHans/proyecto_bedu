@@ -100,4 +100,23 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     - Registrar los libros nuevos
     - Editar stock
 
+## Postwork Sesion 05
 
+### Modelo Relacional
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/modelo_relacional.png)
+
+### Modelo ER
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/modelo_ER.png)
+
+### Describe tables
+
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/administradores.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/articulos_compra.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/autores.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/compras.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/editoriales.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/generos.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/idiomas.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/intercambios.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/libros.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/usuarios.png)
