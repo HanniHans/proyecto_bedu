@@ -11,8 +11,7 @@
         "librosEnIntercambio":0,
         "historiaDeIntercambios":[""],
         "telefono": "3777361731"
-    },
-    {
+    },{
         "id" : 1,
         "nombre": "Carlos",
         "apellido": "Pardo",
@@ -129,7 +128,70 @@
         "librosEnIntercambio":0,
         "historiaDeIntercambios":[""],
         "telefono": "55473829234"
+    },{
+        "id" : 5,
+        "nombre": "Julian",
+        "apellido": "Torres",
+        "direccion": "Direccion 6",
+        "fotoDeUsuario": "Foto6",
+        "contraseña": "ContraseñaUltraSegura",
+        "email": "JulianT@prueba.com",
+        "calificacion": 4,
+        "comentario": ["Buena relación Calidad-Precio"],
+        "librosEnIntercambio":2,
+        "historiaDeIntercambios":["5", "6"],
+        "telefono": "4442856399"  
+    },{
+        "id" : 6,
+        "nombre": "Fernando",
+        "apellido": "Soto",
+        "direccion": "Direccion 7",
+        "fotoDeUsuario": "Foto7",
+        "contraseña": "ContraseñaMuuuySegura",
+        "email": "JulianT@prueba.com",
+        "calificacion": 4,
+        "comentario": ["Buena relación Calidad-Precio"],
+        "librosEnIntercambio":3,
+        "historiaDeIntercambios":["7"],
+        "telefono": "4542856300"  
+    },{
+        "id" : 7,
+        "nombre": "Lucero",
+        "apellido": "Gutierrez",
+        "direccion": "Direccion 8",
+        "fotoDeUsuario": "Foto8",
+        "contraseña": "ContraseñaMamiSegura",
+        "email": "LuceroG@prueba.com",
+        "calificacion": 3,
+        "comentario": [""],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":[""],
+        "telefono": "4542852200"  
+    },{
+        "id" : 8,
+        "nombre": "Andres",
+        "apellido": "Galicia",
+        "direccion": "Direccion 9",
+        "fotoDeUsuario": "Foto9",
+        "contraseña": "ContraseñaPapiSegura",
+        "email": "AndresG@prueba.com",
+        "calificacion": 5,
+        "comentario": ["Super experiencia"],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":["8"],
+        "telefono": "4549352200"  
+    },{
+        "id" : 9,
+        "nombre": "Liliana",
+        "apellido": "Duarte",
+        "direccion": "Direccion 10",
+        "fotoDeUsuario": "Foto10",
+        "contraseña": "ContraseñaaaSegura",
+        "email": "LilianaD@prueba.com",
+        "calificacion": 4,
+        "comentario": [""],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":[""],
+        "telefono": "45431366200"  
     }
-
-
 ]
