@@ -61,4 +61,11 @@
     "email": "gabriel@prueba.com",
     "contraseña": "ContraseñaMasSegura"
 
+},{
+    "id" : 5,
+    "nombre": "Mireya",
+    "apellido": "Aguilar",
+    "email": "Mireya@prueba.com",
+    "contraseña": "ContraseñaSuperSegura"
+
 }]
