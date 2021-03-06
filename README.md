@@ -124,3 +124,21 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
 ![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/intercambios.png)
 ![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/libros.png)
 ![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/usuarios.png)
+
+
+## Postwork Sesion 05 <a name="postwork-6"></a>
+
+**¿Cuáles son las ventajas de usar el modelo relacional en nuestro proyecto?**
+    La velocidad con la que se ejecutan las queries y la consistencia de los datos.  
+
+**¿Cuáles son las limitantes de usar el modelo relacional en nuestro proyecto?**
+    La distribución de los datos en las tablas y la modificación en las mismas. 
+
+**¿Qué ventajas ofrece el modelo no relacional a nuestro proyecto?**
+    Las modificaciones de los documentos son más sencillos de ralizar, limpios y no es necesario modificar otros documentos. La velocidad también es un elemento clave y la curva de aprendizaje es menor que la de SQL. 
+
+**¿Qué desventajas tiene el uso del modelo no relacional en nuestro proyecto?**
+    Los documentos pueden tener muchas anidaciones, haciéndo difícil el análisis u obtencón de ciertos datos que se encuentren en una anidación profunda.
+
+**¿Qué implementación de base de datos de las que hicimos representa mejor las especificaciones de las entidades del proyecto y por qué?**
+    La implementación en NoSQL, pues tendrá un mejor performance al implementar la base de datos en la aplicación. También no se tiene planeado hacer consultas transaccionales y representa de manera más clara a los objetos que se requieren.
