@@ -1,5 +1,6 @@
 class Intercambio{
-    constructor(usuario1, usuario2, libro1, libro2, status1, status2, punto_medio){
+    constructor(id, usuario1, usuario2, libro1, libro2, status1, status2, punto_medio){
+        this.id = id;
         this.usuario1 = usuario1;
         this.usuario2 = usuario2;
         this.libro1 = libro1;
