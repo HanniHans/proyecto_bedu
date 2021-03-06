@@ -1,0 +1,13 @@
+[
+   {
+       "id":0,
+       "usuario1" : 1,
+       "usuario2" : 2,
+       "libro1" : 1,
+       "libro2" : 3,
+       "status1" : true,
+       "status2" : false,
+       "status_general" : false,
+       "punto_medio" : "En plaza central"
+   }
+]
