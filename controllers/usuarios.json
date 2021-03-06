@@ -178,7 +178,7 @@
         "calificacion": 5,
         "comentario": ["Super experiencia"],
         "librosEnIntercambio":0,
-        "historiaDeIntercambios":["8" "9"],
+        "historiaDeIntercambios":["8"],
         "telefono": "4549352200"  
     },{
         "id" : 9,
