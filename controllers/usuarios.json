@@ -64,4 +64,72 @@
         "librosEnIntercambio":0,
         "historiaDeIntercambios":[""],
         "telefono": ""
-    }]
+    },{
+        "id" : 543543,
+        "nombre": "Ricardo",
+        "apellido": "Vazquez",
+        "direccion": "Direccion 543543",
+        "fotoDeUsuario": "Foto543543",
+        "contraseña": "ContraseñaMasSegura",
+        "email": "Ricardo@prueba.com",
+        "calificacion": 5,
+        "comentario": ["Todo bien, todo correcto"],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":["2","1"],
+        "telefono": "54634532"
+    },{
+        "id" : 56432,
+        "nombre": "Zaira",
+        "apellido": "Baltazar",
+        "direccion": "Direccion 56432",
+        "fotoDeUsuario": "Foto56432",
+        "contraseña": "ContraseñaMasSegura",
+        "email": "Zaira@prueba.com",
+        "calificacion": 5,
+        "comentario": ["10 de 10"],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":["5" ,"2"],
+        "telefono": "567890022"
+    },{
+        "id" : 54367,
+        "nombre": "Mauricio",
+        "apellido": "Metre",
+        "direccion": "Direccion 54367",
+        "fotoDeUsuario": "Foto5",
+        "contraseña": "ContraseñaMasSegura",
+        "email": "Mauricio@prueba.com",
+        "calificacion": 3,
+        "comentario": ["No me gusto"],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":[""],
+        "telefono": "554455332211"
+    },{
+        "id" : 543254,
+        "nombre": "Arantza",
+        "apellido": "Rosales",
+        "direccion": "Direccion 532254",
+        "fotoDeUsuario": "Foto5",
+        "contraseña": "ContraseñaMasSegura",
+        "email": "Arantza@prueba.com",
+        "calificacion": 2,
+        "comentario": ["Estaba roto"],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":["1","4"],
+        "telefono": "54327890"
+    },{
+        "id" : 56743,
+        "nombre": "Erika",
+        "apellido": "Gonzales",
+        "direccion": "Direccion 56743",
+        "fotoDeUsuario": "Foto5",
+        "contraseña": "ContraseñaMasSegura",
+        "email": "Erika@prueba.com",
+        "calificacion": 5,
+        "comentario": ["Me encanto"],
+        "librosEnIntercambio":0,
+        "historiaDeIntercambios":[""],
+        "telefono": "55473829234"
+    }
+
+
+]
