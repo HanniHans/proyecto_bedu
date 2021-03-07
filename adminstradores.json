@@ -1,0 +1,71 @@
+[{
+    "id" : 0,
+    "nombre": "Alex",
+    "apellido": "Martinez",
+    "email": "alexmtz@gmail.com",
+    "contraseña": "ContraseñaSegura"
+},
+{
+    "id" : 1,
+    "nombre": "Carlos",
+    "apellido": "Pardo",
+    "email": "carlos@prueba.com",
+    "contraseña": "ContraseñaHiperSegura"
+},
+{
+    "id" : 2,
+    "nombre": "Sebastian",
+    "apellido": "Neri",
+    "email": "sebastian@prueba.com",
+    "contraseña": "ContraseñaMegaSegura"
+},
+{
+    "id" : 3,
+    "nombre": "Ruth",
+    "apellido": "Licona",
+    "email": "ruthL@prueba.com",
+    "contraseña": "ContraseñaSegura"
+    
+},{
+    "id" : 4,
+    "nombre": "Hannia",
+    "apellido": "Rosales",
+    "email": "HanniaR@prueba.com",
+    "contraseña": "ContraseñaMasSegura"
+
+},{
+    "id" : 4532,
+    "nombre": "Lidia",
+    "apellido": "Vazquez",
+    "email": "Lidia@prueba.com",
+    "contraseña": "ContraseñaMasSegura"
+
+},{
+    "id" : 4325,
+    "nombre": "Juana",
+    "apellido": "Lopez",
+    "email": "Juana@prueba.com",
+    "contraseña": "ContraseñaMasSegura"
+
+},{
+    "id" : 4321,
+    "nombre": "Alicia",
+    "apellido": "Wonderland",
+    "email": "Alicia@prueba.com",
+    "contraseña": "ContraseñaMasSegura"
+
+},{
+    "id" : 4213,
+    "nombre": "Gabriel",
+    "apellido": "Garcia",
+    "email": "gabriel@prueba.com",
+    "contraseña": "ContraseñaMasSegura"
+
+},{
+    "id" : 5,
+    "nombre": "Mireya",
+    "apellido": "Aguilar",
+    "email": "Mireya@prueba.com",
+    "contraseña": "ContraseñaSuperSegura"
+}
+]

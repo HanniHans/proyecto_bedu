@@ -3,6 +3,7 @@
 ## Tabla de contenidos
 1. [Postwork Sesion 03](#postwork-3)
 2. [Postwork Sesion 05](#postwork-5)
+3. [Postwork Sesion 06](#postwork-6)
 
 ## Postwork Sesion 03 <a name="postwork-3"></a>
 
@@ -126,7 +127,7 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
 ![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/usuarios.png)
 
 
-## Postwork Sesion 05 <a name="postwork-6"></a>
+## Postwork Sesion 06 <a name="postwork-6"></a>
 
 **¿Cuáles son las ventajas de usar el modelo relacional en nuestro proyecto?**
     La velocidad con la que se ejecutan las queries y la consistencia de los datos.  
