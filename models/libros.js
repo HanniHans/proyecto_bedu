@@ -19,7 +19,6 @@ class Libro{
         this.calificacionComentario = calificacionComentario; // Calificación o comentario sobre el libro
         this.precio = precio;
         this.foto = foto;
-        this.stock = stock; // Disponibilidad del libro y cantidad de copias
     }
 }
 
