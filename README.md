@@ -1,4 +1,4 @@
-# proyecto_bedu
+# Proyecto Bedu: Book Crossing
 
 ## Tabla de contenidos
 1. [Postwork Sesion 03](#postwork-3)
@@ -126,5 +126,3 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     La implementación en NoSQL, pues tendrá un mejor performance al implementar la base de datos en la aplicación. También no se tiene planeado hacer consultas transaccionales y representa de manera más clara a los objetos que se requieren.
 
 
-### Base de Datos NoSql
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/NoSql.png)
