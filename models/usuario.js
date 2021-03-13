@@ -28,7 +28,7 @@ email: {
   match: [/\S+@\S+\.\S+/, "es inválido"],
   index: true,
 },
-tipo:  { type: String, enum: ['ususario', 'admin'] }
+tipo:  { type: String, enum: ['ususario', 'admin'] },
 direccion: String,
 telefono: String,
 fotoDeUsuario: String,
