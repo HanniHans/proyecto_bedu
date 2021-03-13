@@ -108,23 +108,23 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
 ## Postwork Sesion 05 <a name="postwork-5"></a>
 
 ### Modelo Relacional
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/modelo_relacional.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/modelo_relacional.png)
 
 ### Modelo ER
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/modelo_ER.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/modelo_ER.png)
 
 ### Describe tables
 
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/administradores.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/articulos_compra.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/autores.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/compras.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/editoriales.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/generos.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/idiomas.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/intercambios.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/libros.png)
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/describe_tables/usuarios.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/administradores.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/articulos_compra.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/autores.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/compras.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/editoriales.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/generos.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/idiomas.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/intercambios.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/libros.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/describe_tables/usuarios.png)
 
 
 ## Postwork Sesion 06 <a name="postwork-6"></a>
@@ -146,4 +146,4 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
 
 
 ### Base de Datos NoSql
-![alt text](https://github.com/HanniHans/proyecto_bedu/blob/main/database/NoSql.png)
+![alt text](https://github.com/HanniHans/proyecto_bedu/blob/OldFiles/database/NoSql.png)

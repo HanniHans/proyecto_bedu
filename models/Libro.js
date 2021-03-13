@@ -10,7 +10,7 @@ const LibroSchema = new mongoose.Schema({
     numeroDePaginas: {type: Number, required: true},
     idioma: { type: String, enum: ['español', 'ingles'], },
     stock: {type : Number},
-    tipoDePasta: { type: String, enum: ['normal', 'anunciante'] },
+    tipoDePasta: { type: String, enum: ['dura', 'blanda'] },
     isbn:{
         type:String,
         required: [true, "no puede estar vacío"],
@@ -34,7 +34,7 @@ const LibroSchema = new mongoose.Schema({
 /**
 * Devuelve la representación de un libro
 */
-UsuarioSchema.methods.publicData = function(){
+LibroSchema.methods.publicData = function(){
     return {
     id: this.id,
     nombre: this.nombre,
