@@ -9,7 +9,7 @@ function crearIntercambio(req, res, next){
 }
 
 function modificarIntercambio(req, res, next){
-    Intercambio.findById(req.Intercambio.id).then(intercambio => {
+    Intercambio.findById(req.params.id).then(intercambio => {
         if (!intercambio) { return res.sendStatus(401); }
         let nuevaInfo = req.body
         if (typeof nuevaInfo.usuario1 !== 'undefined')
@@ -37,10 +37,11 @@ function modificarIntercambio(req, res, next){
 function obtenerIntercambios(req, res, next){
     if(req.params.id){
         Intercambio.findById(req.params.id)
-                .populate('usuario1', 'username nombre apellido direccion foto')
+                .populate('usuario1', 'nombre apellido direccion foto')
                 .populate('usuario2', 'username nombre apellido direccion foto')
                 .populate('libro1', 'nombre autor')
-                .populate('libro2', 'nombre autor').then(libro => {
+                .populate('libro2', 'nombre autor')
+                .then(libro => {
             res.send(libro)
           }).catch(next)   
     }else{

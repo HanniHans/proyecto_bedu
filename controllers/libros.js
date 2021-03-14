@@ -21,7 +21,8 @@ function obtenerLibro(req, res, next){
 }
 
 function modificarLibro(req, res, next){
-    Libro.findById(req.libro.id).then( libro =>{
+    console.log(req.params.id)
+    Libro.findById(req.params.id).then( libro =>{
         if (!libro) { return res.sendStatus(401); }
         let nuevaInfo = req.body
         if (typeof nuevaInfo.nombre !== 'undefined')
