@@ -1,15 +1,28 @@
-class Intercambio{
-    constructor(id, usuario1, usuario2, libro1, libro2, status1, status2, punto_medio){
-        this.id = id;
-        this.usuario1 = usuario1;
-        this.usuario2 = usuario2;
-        this.libro1 = libro1;
-        this.libro2 = libro2;
-        this.status1 = status1;
-        this.status2 = status2;
-        this.status_general = this.status1 && this.status2;
-        this.punto_medio = punto_medio;
+// Intercambio.js
+const mongoose = require('mongoose');  
+const Schema = mongoose.Schema; 
+
+const IntercambioSchema = new mongoose.Schema({
+    usuario1: { type: Schema.Types.ObjectId},
+    usuario2: { type: Schema.Types.ObjectId},
+    libro1: { type: Schema.Types.ObjectId},
+    libro2: { type: Schema.Types.ObjectId},
+    status1: Boolean,
+    status2: Boolean,
+    puntoMedio: String,
+    statusGeneral: Boolean
+})
+
+IntercambioSchema.methods.publicData = function(){
+    return{
+        id: this.id,
+        usuario1: this.usuario1,
+        usuario2: this.usuario2,
+        libro1: this.libro1,
+        libro2: this.libro2,
+        puntoMedio: this.puntoMedio,
+        statusgeneral: this.statusGeneral
     }
 }
 
-module.export = Intercambio;
+mongoose.model("Intercambio", IntercambioSchema); 

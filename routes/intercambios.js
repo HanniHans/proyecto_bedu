@@ -1,17 +1,17 @@
-const { Module } = require("module")
 
 const router = require("express").Router();
 
-const{
-    intercambiarLibros,
-    cancelarIntercambio,
-    verIntercambio,
-    cambiarIntercambio
-}
+const {
+    crearIntercambio,
+    modificarIntercambio,
+    obtenerIntercambios
+} = require("../controllers/intercambios")
 
-router.post("/", intercambiarLibros);
-router.get("/:id", verIntercambio);
-router.delete("/:id", cancelarIntercambio);
-router.put("/:id", cambiarIntercambio);
+var auth = require("./auth")
 
-module.exports = router;
+router.get('/', auth.requerido, obtenerIntercambios);
+router.get('/:id', auth.requerido, obtenerIntercambios);
+router.post('/', auth.requerido, crearIntercambio);
+router.put('/:id', auth.requerido, modificarIntercambio);
+
+module.exports = router; 

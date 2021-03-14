@@ -1,15 +1,17 @@
 const router = require('express').Router();
 
-const{
-    registroLibros,
-    editarLibro,
-    editarStock,
-    evaluarLibro,
-    visualizarlibros
-} = require('../controllers/libros')
+const {
+    crearLibro,
+    modificarLibro,
+    obtenerLibro
+} = require("../controllers/libros")
 
-router.get('/', visualizarlibros)
-router.put('/:id', editarLibro)
-router.put('/stock:id', editarStock)
-router.put('/evaluar:id', evaluarLibro)
-router.post('/', registroLibros)
+var auth = require("./auth")
+
+router.post('/', auth.requerido, crearLibro);
+router.get('/', auth.opcional, obtenerLibro);
+router.get('/:id', auth.opcional, obtenerLibro);
+router.put('/:id', auth.requerido, modificarLibro);
+
+
+module.exports = router;

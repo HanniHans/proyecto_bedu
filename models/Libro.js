@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');  
 
 const LibroSchema = new mongoose.Schema({
-    nombre: { type: String, required: true },
+    nombre: { type: String, required: true, index: true },
     autor: { type: String, required: true },
     edicion: { type: String, required: true },
     editorial: { type: String, required: true },
@@ -10,7 +10,7 @@ const LibroSchema = new mongoose.Schema({
     numeroDePaginas: {type: Number, required: true},
     idioma: { type: String, enum: ['español', 'ingles'], },
     stock: {type : Number},
-    tipoDePasta: { type: String, enum: ['normal', 'anunciante'] },
+    tipoDePasta: { type: String, enum: ['blanda', 'dura'] },
     isbn:{
         type:String,
         required: [true, "no puede estar vacío"],
@@ -34,7 +34,7 @@ const LibroSchema = new mongoose.Schema({
 /**
 * Devuelve la representación de un libro
 */
-UsuarioSchema.methods.publicData = function(){
+LibroSchema.methods.publicData = function(){
     return {
     id: this.id,
     nombre: this.nombre,
@@ -57,4 +57,4 @@ UsuarioSchema.methods.publicData = function(){
 };
 
 
-mongoose.model("Libro", UsuarioSchema); 
+mongoose.model("Libro", LibroSchema); 

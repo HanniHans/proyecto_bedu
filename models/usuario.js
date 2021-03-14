@@ -28,6 +28,7 @@ email: {
   match: [/\S+@\S+\.\S+/, "es inválido"],
   index: true,
 },
+tipo: { type: String, enum: ['usuario', 'admin'] },
 direccion: String,
 telefono: String,
 fotoDeUsuario: String,
@@ -37,10 +38,8 @@ calificacion: {
     max:5
 },
 comentarios: [String],
-
-// librosEnIntercambio:[{type: Schema.Types.ObjectId, ref: 'Libro'}],
 librosEnIntercambio: [{
-    type: Schema.Types.ObjectId, //HERE
+    type: Schema.Types.ObjectId,
     ref: 'Libro'
 }],
 historialDeIntercambios:{ type : [Schema.Types.ObjectId], ref: 'Libro'},

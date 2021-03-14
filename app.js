@@ -23,6 +23,9 @@ mongoose.set("debug", true);
 
 //MODELOS
 require("./models/Usuario");
+require("./models/Libro")
+require("./models/Intercambio");
+
 
 
 /*********************** Mongoose Configuration *******************************/

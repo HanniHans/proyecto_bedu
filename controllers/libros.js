@@ -1,44 +1,67 @@
-const Libros = require('../models/libros')
+const mongoose = require("mongoose")
+const Libro = mongoose.model('Libro')
 
-
-function registroLibros(req, res){
-    var libro = new Libros(req.body)
-    res.status(201).send(libro)
+function crearLibro(req, res, next){
+    const libro = new Libro(req.body)
+    libro.save().then(libro =>{
+        return res.json(libro.publicData());
+    }).catch(next)
 }
 
-function visualizarlibros(req, res){
-    var libro1 = new Libros(1, 'Harry Potter', 'J.K. Rowling')
-    var libro2 = new Libros(2, 'El señor de los anillos', 'J.R.R. Tolkien')
-    res.send([libro1, libro2])
+function obtenerLibro(req, res, next){
+    if(req.params.id){
+        Libro.findById(req.params.id).then( libro =>{
+            res.send(libro)
+        }).catch(next)
+    }else {
+        Libro.find().then(libro =>{
+            res.send(libro)
+        }).catch(next)
+    }        
 }
 
-function editarLibro(req, res){
-    var libro = new Libros(req.params.id ,'Harry Potter', 'J.K. Rowling', '9Edicion', 'Trillas')
-    var modificaciones = req.body;
-    libro = {...libro, ...modificaciones}
-    res.send(libro)
+function modificarLibro(req, res, next){
+    Libro.findById(req.libro.id).then( libro =>{
+        if (!libro) { return res.sendStatus(401); }
+        let nuevaInfo = req.body
+        if (typeof nuevaInfo.nombre !== 'undefined')
+        libro.nombre = nuevaInfo.nombre
+        if (typeof nuevaInfo.editorial !== 'undefined')
+        libro.editorial = nuevaInfo.editorial
+        if (typeof nuevaInfo.edicion !== 'undefined')
+        libro.edicion = nuevaInfo.edicion
+        if (typeof nuevaInfo.genero !== 'undefined')
+        libro.genero = nuevaInfo.genero
+        if (typeof nuevaInfo.numeroDePaginas !== 'undefined')
+        libro.numeroDePaginas = nuevaInfo.numeroDePaginas
+        if (typeof nuevaInfo.idioma !== 'undefined')
+        libro.idioma = nuevaInfo.idioma
+        if (typeof nuevaInfo.stock !== 'undefined')
+        libro.stock = nuevaInfo.stock
+        if (typeof nuevaInfo.tipoDePasta !== 'undefined')
+        libro.tipoDePasta = nuevaInfo.tipoDePasta
+        if (typeof nuevaInfo.isbn !== 'undefined')
+        libro.isbn = nuevaInfo.isbn
+        if (typeof nuevaInfo.sinopsis !== 'undefined')
+        libro.sinopsis = nuevaInfo.sinopsis
+        if (typeof nuevaInfo.estadoDelLibro !== 'undefined')
+        libro.estadoDelLibro = nuevaInfo.estadoDelLibro
+        if (typeof nuevaInfo.descripcion !== 'undefined')
+        libro.descripcion = nuevaInfo.descripcion
+        if (typeof nuevaInfo.comentario !== 'undefined')
+        libro.comentario = nuevaInfo.comentario
+        if (typeof nuevaInfo.precio !== 'undefined')
+        libro.precio = nuevaInfo.precio
+        if (typeof nuevaInfo.foto !== 'undefined')
+        libro.foto = nuevaInfo.foto
+        libro.save().then( updateLibro=>{
+            res.status(201).json(updateLibro.publicData());
+        }).catch(next)
+    }).catch(next)
 }
 
-
-function evaluarLibro(req,res){
-    var libro = new Libros(req.params.id, 'libro1', 'autor1')
-    libro.calificacion = req.body.calificacion;
-    libro.comentario = req.body.comentario;
-    res.status(200).send('Libro evaluado')
-
-}
-
-function editarStock(req, res){
-    var libro = new Libro(req.params.id, 'Harry Potter', 'J.K Rowling', '2a. Edición', 'Trillas', 'Ficción', 400, 'Español', 4)
-    libro.stock = req.body;
-    res.status(200).send(`Stock actualizado`)
-}
-// Actualizar stock
-
-module.exports= {
-    registroLibros,
-    editarLibro,
-    editarStock,
-    evaluarLibro,
-    visualizarlibros
-}
+module.exports = {
+    crearLibro,
+    obtenerLibro,
+    modificarLibro
+  }
