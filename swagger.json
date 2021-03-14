@@ -364,7 +364,7 @@
             "description": "Invalid ID supplied"
           },
           "404": {
-            "description": "Libro no encontrado"
+            "description": "Intercambio no encontrado"
           },
           "405": {
             "description": "Validation exception"
