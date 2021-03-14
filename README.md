@@ -61,12 +61,6 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     - Precio  
     - Foto  
     - Stock  
-- Administrador  
-    - Id  
-    - Nombre 
-    - Apellido 
-    - Email  
-    - Contraseña
 - Usuario  
     - Id  
     - Nombre  
@@ -79,11 +73,21 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     - Libros en intercambio (actuales y pasados)  
     - Historial de Intercambios  
     - Telefono  
+    - Tipo
+- Intercambio
+    - usuario 1
+    - Usuario 2
+    - Libro 1
+    - Libro 2
+    - Status 1
+    - Status 2
+    - PuntoMedio
+    - status General
 
 **¿Cuáles son las principales entidades?** 
 - Libro  
-- Usuario  
-- Administrador
+- Usuario 
+- Intercambio
 
 **¿Qué funcionalidades tiene cada entidad?**
 - Libro  
@@ -100,13 +104,9 @@ Una aplicación web en donde se pueda comprar e intercambiar libros.
     - Comprar un libro  
     - Registrarse  
     - Registrar sus libros  
-- Administrador  
-    - Gestionar Usuarios
-    - Registrar los libros nuevos
-    - Editar stock
-
-
-
+- Intercambio
+    - Registra dos usuarios que van a intercambiar
+    - Registra dos libros que serán intercambiados
 
 ## Postwork Sesion 06 <a name="postwork-6"></a>
 
