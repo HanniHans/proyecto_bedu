@@ -14,9 +14,11 @@ app.use(bodyParser.json());
 
 /*********************** Mongoose Configuration *******************************/
 const mongoose = require("mongoose");
+var isProduction = process.env.NODE_ENV === 'production';
 
 mongoose.connect(
-    "mongodb+srv://Charly:Pac26116@cluster0.gyjue.mongodb.net/BookCrossing?retryWrites=true&w=majority"
+  process.env.MONGODB_URI, // obtiene la url de conexión desde las variables de entorno
+  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
 
 mongoose.set("debug", true);
@@ -25,22 +27,20 @@ mongoose.set("debug", true);
 require("./models/Usuario");
 require("./models/Libro")
 require("./models/Intercambio");
-
-
-
-/*********************** Mongoose Configuration *******************************/
-
-// Agregamos el código de nuestro router (routes/index.js)
+require('./config/passport');
+//CONFIGURACION DE SWAGGER
 var swaggerUi = require('swagger-ui-express')
 var swaggerDocument = require('./swagger.json')
+/*********************** Mongoose Configuration *******************************/
+
+
+//Ruta del Swagger
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+// Agregamos el código de nuestro router (routes/index.js)
 app.use('/v1', require('./routes'));
 
 
-require('./config/passport');
-
-
-
+//Error 404
 app.use(function(req,res,next){
     var err = new Error('Not Found')
     err.status = 404;
